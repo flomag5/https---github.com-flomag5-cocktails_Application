@@ -1,10 +1,18 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+<NotifBar/>
+  <router-view />
 </template>
+
+
+<script>
+import NotifBar from '@/components/NotifBar.vue'
+export default {
+  components: {
+    NotifBar
+  }
+}
+</script>
+
 
 <style>
 #app {
